@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks;
+    cout<<"ENTER THE MARKS:";
+    cin>>marks;
+    cout<<"marks ARE:"<<marks<<endl;
+    if(marks<=35){
+            cout<<"D"<<endl;
+    }
+    else if(marks<=50){
+        cout<<"C";
+    }
+    else if(marks<=75){
+        cout<<"B";
+    }
+    else if(marks<=100){
+        cout<<"A";
+    }
+    else{
+        cout<<"invalid marks";
+    }
+    return 0;
+}
