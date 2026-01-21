@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks;
+    cout<<"ENTER THE MARKS:";
+    cin>>marks;
+    cout<<"marks ARE:"<<marks;
+    return 0;
+}
