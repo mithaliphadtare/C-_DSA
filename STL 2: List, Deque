@@ -1,0 +1,18 @@
+#include<iostream>
+#include<list>
+#include<deque>
+using namespace std;
+int main(){
+//declaring List
+list<int> l={1,2,3,4,5};
+for(auto value:l){
+    cout<<value;
+}
+//declaring Deque
+deque<int> d={2,3,4,5};
+//we can use this here but not in list
+cout<<d[0];
+
+
+return 0;
+}
