@@ -1,0 +1,17 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+int x,y;
+cin>>x>>y;
+int z=1;
+int p=min(x,y);
+int i;
+for(i=2;i<=p; i++){
+    if(x%i==0 && y%i==0){
+        z=i;
+    }
+}
+cout<<z;
+return 0;
+}
