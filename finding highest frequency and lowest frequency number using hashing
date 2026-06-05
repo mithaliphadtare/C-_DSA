@@ -1,0 +1,32 @@
+#include<iostream>
+#include<map>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int arr[n];
+for(int i=0; i<n; i++){
+    cin>>arr[i];
+}
+map<int, int> mpp;
+for(int i=0; i<n;i++){
+    mpp[arr[i]]+=1;
+}
+int highest=arr[0];
+for(int i=1;i<n;i++){
+    if((mpp[highest])<(mpp[arr[i]])){
+        highest=arr[i];
+    }
+}
+cout<<"Highest frequency Number is:"<<highest<<endl;
+int lowest=arr[0];
+for(int i=1;i<n;i++){
+    if((mpp[lowest])>(mpp[arr[i]])){
+        lowest=arr[i];
+    }
+}
+cout<<"Lowest frequency Number is:"<<lowest<<endl;
+
+}
+
+
