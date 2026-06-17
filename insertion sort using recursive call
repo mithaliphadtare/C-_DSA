@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    void is(vector<int>& arr,int i, int n){
+        
+        int j=i;
+        if(j==n) return;
+        while(j>0 && arr[j-1]>arr[j]){
+            swap(arr[j], arr[j-1]);
+            j--;
+        }
+        is(arr, i+1,n);
+    }
+    vector<int> insertionSort(vector<int>& nums) {
+        int n=nums.size();
+        is(nums,0, n);
+        return nums;
+    }
+};
+int main(){
+solution sobj;
+vector<int> nums=[1,89,45,23,10];
+vector<int> result=sobj.insertionsort(nums);
+for(int it:result){
+cout<<x<<endl;
+}
+return 0;
+}
