@@ -1,0 +1,17 @@
+#include<iostream>
+using namepsace std;
+int removeDuplicates(int nums[], int n) {
+        int n=nums.size()
+        int count=1;
+        for(int i=1;i<n;i++){
+            if(arr[i]!=arr[i-1]){
+                count++;
+            }
+        }
+        return count;
+    }
+int main(){
+int arr[5]={1,2,3,3,4};
+removeDuplicates(arr, 5);
+return 0;
+}
