@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+void check(int arr[], int n){
+int issort=0;
+for(int i=0;i<=n;i++){
+    for(int j=i+1;j<n;j++){
+        if(arr[i]<arr[j]){
+            issort=1;
+        }
+        else{
+            issort=0;
+            break;
+        }
+    }
+}
+if(issort==0){
+    cout<<"not sort";
+}
+else{
+    cout<<"sort";
+}
+}
+
+bool isSorted(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < arr[i - 1])  // If any element is smaller than the previous one, return false
+            return false;
+    }
+
+    return true;  // Return true if the array is sorted
+}
+
+int main(){
+int n;
+cin>>n;
+int arr[n];
+for(int i=0; i<n; i++){
+cin>>arr[i];
+}
+//check(arr,n);
+printf("%s", isSorted(arr, n) ? "True" : "False");  // Output result
+return 0;
+}
+
